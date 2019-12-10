@@ -1,4 +1,5 @@
-  
+
+
 // gulpプラグインを読み込みます
 const { src, dest, watch, parallel } = require("gulp");
 // Sassをコンパイルするプラグインを読み込みます
@@ -31,18 +32,18 @@ const compileSass = () =>
 const html = () =>
   src("src/**/*.html")
     .pipe(browserSync.reload({ stream: true })) 
-    .pipe(dest('dist/'))
+    .pipe(dest('dist/html'))
 
 const css = () =>
   src("src/**/*.css")
     .pipe(browserSync.reload({ stream: true })) 
-    .pipe(dest('dist/'))
+    .pipe(dest('dist/css'))
 
 
 const js = () =>
   src("src/**/*.js")
     .pipe(browserSync.reload({ stream: true })) 
-    .pipe(dest('dist/'))
+    .pipe(dest('dist/js'))
 
 
 /// 監視 ////////////////////////////////////////////
