@@ -32,18 +32,18 @@ const compileSass = () =>
 const html = () =>
   src("src/**/*.html")
     .pipe(browserSync.reload({ stream: true })) 
-    .pipe(dest('dist/html'))
+    .pipe(dest('dist/'))
 
 const css = () =>
   src("src/**/*.css")
     .pipe(browserSync.reload({ stream: true })) 
-    .pipe(dest('dist/css'))
+    .pipe(dest('dist/'))
 
 
 const js = () =>
   src("src/**/*.js")
     .pipe(browserSync.reload({ stream: true })) 
-    .pipe(dest('dist/js'))
+    .pipe(dest('dist/'))
 
 
 /// 監視 ////////////////////////////////////////////

@@ -1,0 +1,12 @@
+/*
+   _font
+*/
+$font-base: "游ゴシック体", "Yu Gothic", YuGothic,"游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+$font-serif: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+$base-font-size: 14px;
+@include sp {
+	$base-font-size: 12px;
+}
+/*
+   _font-end
+*/

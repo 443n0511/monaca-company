@@ -2,6 +2,72 @@
    _base
 */
 
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $font-base;
+	font-size: $base-font-size;
+	line-height: 2.0;
+
+	margin: 0;
+	padding: 0;
+
+	letter-spacing: .05em;
+
+	color: $main-color;
+}
+
+h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+
+	vertical-align: bottom;
+}
+
+ul, li, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+a {
+	text-decoration: none;
+
+	color: $main-color;
+}
+
+a:hover {
+	transition: .3s;
+
+	opacity: .6;
+}
+
+section {
+	margin-bottom: 120px;
+
+	@include sp {
+		margin-bottom: 60px;
+	}
+}
+
+.inner {
+	width: 1080px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
 
 
 /*

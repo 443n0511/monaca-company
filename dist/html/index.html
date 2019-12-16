@@ -3,41 +3,59 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>practice</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- drawer.min.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+  <!-- style.css -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+  <!-- script.js -->
+  <script src="../js/script.js"></script>
 </head>
 
-<body>
+<body class="drawer drawer--right">
   <header class="l-header">
-    <div class="p-header--wrapper">
-      <h1 class="c-header--title">もなか株式会社</h1>
-      <nav class="p-header--nav">
-        <ul class="c-header-list">
-          <li class="c-header-list--item"><a class="c-header-list--item__anchor" href="#">トップページ</a></li>
-          <li class="c-header-list--item"><a class="c-header-list--item__anchor" href="#">会社概要</a></li>
-          <li class="c-header-list--item"><a class="c-header-list--item__anchor" href="#">事業内容</a></li>
-          <li class="c-header-list--item"><a class="c-header-list--item__anchor" href="#">採用情報</a></li>
-          <li class="c-header-list--item"><a class="c-header-list--item__anchor" href="#">お問い合わせ</a></li>
+    <div class="p-header-inner inner ">
+      <h1 class="p-header--title">もなか株式会社</h1>
+      <nav class="drawer-nav p-header-nav ">
+        <ul class="p-header-list c-list drawer-menu">
+          <li class="p-header-list--item"><a class="drawer-brand p-header-list--item__anchor " href="#">トップページ</a></li>
+          <li class="p-header-list--item"><a class="drawer-brand p-header-list--item__anchor " href="#">会社概要</a></li>
+          <li class="p-header-list--item"><a class="drawer-brand p-header-list--item__anchor " href="#">事業内容</a></li>
+          <li class="p-header-list--item"><a class="drawer-brand p-header-list--item__anchor " href="#">採用情報</a></li>
+          <li class="p-header-list--item"><a class="drawer-brand p-header-list--item__anchor " href="#">お問い合わせ</a></li>
         </ul>
       </nav>
+      <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+      </button>
     </div>
   </header>
 
   <section class="p-main-visual">
-    <h2 class="c-main-visual--title">ママ、お腹すいた</h2>
+      <img class="p-main-visual--img" src="../image/index_header01.jpg" alt="スマイリーの画像">
+    <h2 class="p-main-visual--title">ママ、お腹すいた</h2>
     <div class="p-main-visual--bg"></div>
   </section>
 
   <main>
     <section class="p-greeting">
-      <div class="p-greeting--wrapper">
-        <div class="c-greeting--image">
-          <figure><img src="images/drill-444493_1920.jpg" alt=""></figure>
-          <div class="c-greeting--text">
-            <h2 class="c-greeting--text__title">帰ってからが、本番です</h2>
-            <p class="c-greeting--text__text">仕事が終わってホッとしたのもつかの間、ダッシュで保育園へお迎え<br>
-               今日あったこと、楽しかったこと、食べたお給食の話を聴きながら風を切って自転車でお家へ帰ります。<br>
-              帰ってくると「お腹すいた！ご飯まだ！？」と堰を切ったようにスヌーズ機能付きで催促が始まりますが、ここは華麗に受け流しお料理タイム。<br>
+      <div class="inner">
+        <div class="p-greeting--box">
+          <figure class="p-greeting--box__img"><img src="../image/index_greeting01.png" alt="自転車で走る毋"></figure>
+          <div class="p-greeting--box__description">
+            <h2 class="p-greeting--title c-title">帰ってからが、本番です</h2>
+            <p class="p-greeting--text">仕事が終わってホッとしたのもつかの間、ダッシュで保育園へお迎え
+               今日あったこと、楽しかったこと、食べたお給食の話を聴きながら風を切って自転車でお家へ帰ります。
+              帰ってくると「お腹すいた！ご飯まだ！？」と堰を切ったようにスヌーズ機能付きで催促が始まりますが、ここは華麗に受け流しお料理タイム。
               子供たちを食べさせてから、自分のご飯です。ああ、ゆっくり食べたい。</p>
           </div>
         </div>
@@ -45,23 +63,23 @@
     </section>
 
     <section class="p-work">
-      <div class="p-work--wrapper">
-        　<h2 class="c-work--title">事業内容</h2>
-        <ul class="c-work-list">
-          <li class="c-work-list--item"><a class="c-work-list--item__anchor" href="#">
-              <figure><img src="https://placehold.jp/400x400.png"></figure>
-              <h3 class="c-work-list--item__title">夕飯作り</h3>
-              <p class="c-work-list--item__text">一生懸命作っても、食べてもらえない場合があります。</p>
+      <div class="inner">
+        　<h2 class="p-work--title c-title">事業内容</h2>
+        <ul class="p-work-list c-list">
+          <li class="p-work-list--item"><a class="p-work-list--item__anchor" href="#">
+              <figure><img class="p-work-list--item__img" src="../image/index_work01.png" alt="夕飯作り"></figure>
+              <h3 class="p-work-list--item__title">夕飯作り</h3>
+              <p class="p-work-list--item__text">一生懸命作っても、食べてもらえない場合があります。</p>
             </a></li>
-          <li class="c-work-list--item"><a class="c-work-list--item__anchor" href="#">
-              <figure><img src="https://placehold.jp/400x400.png"></figure>
-              <h3 class="c-work-list--item__title">お風呂に入る</h3>
-              <p class="c-work-list--item__text">お風呂から出てお着替えが終わるまでが”お風呂”です。脱いだお洋服は、保育園からお持ち帰りした洗い物と一緒に洗濯します。</p>
+          <li class="p-work-list--item"><a class="p-work-list--item__anchor" href="#">
+              <figure><img class="p-work-list--item__img" src="../image/index_work02.png" alt="お風呂に入る"></figure>
+              <h3 class="p-work-list--item__title">お風呂に入る</h3>
+              <p class="p-work-list--item__text">お風呂から出てお着替えが終わるまでが”お風呂”です。脱いだお洋服は、保育園からお持ち帰りした洗い物と一緒に洗濯します。</p>
             </a></li>
-          <li class="c-work-list--item"><a class="c-work-list--item__anchor" href="#">
-              <figure><img src="https://placehold.jp/400x400.png"></figure>
-              <h3 class="c-work-list--item__title">寝かしつけ</h3>
-              <p class="c-work-list--item__text">しっかりお風呂で温まったら、寝室に移動しみんなでねんね。一緒に寝てしまわないように細心の注意を払って寝かしつけです。</p>
+          <li class="p-work-list--item"><a class="p-work-list--item__anchor" href="#">
+              <figure><img class="p-work-list--item__img" src="../image/index_work03.png" alt="寝かしつけ"></figure>
+              <h3 class="p-work-list--item__title">寝かしつけ</h3>
+              <p class="p-work-list--item__text">しっかりお風呂で温まったら、寝室に移動しみんなでねんね。一緒に寝てしまわないように細心の注意を払って寝かしつけです。</p>
             </a></li>
         </ul>
       </div>
@@ -69,46 +87,46 @@
 
 
     <section class="news">
-      <div class="content-wrapper">
+      <div class="news-inner inner">
 
-        <h2>NEWS</h2>
-        <ul class="c-news-list">
-          <li class="c-news-list--item"><a class="c-news-list--item__anchor" href="#"><time>2019-01-01</time>次男、自分のことを名前で呼ぶようになりました。</a></li>
-          <li class="c-news-list--item"><a class="c-news-list--item__anchor" href="#"><time>2019-01-01</time>長男、自転車の補助輪が外れました。</a></li>
-          <li class="c-news-list--item"><a class="c-news-list--item__anchor" href="#"><time>2019-01-01</time>次男のイヤイヤ期が始まりました。</a></li>
-          <li class="c-news-list--item"><a class="c-news-list--item__anchor" href="#"><time>2919-01-01</time>長男のイヤイヤ期が終了しました。</a></li>
+        <h2 class="p-news--title c-title">NEWS</h2>
+        <ul class="p-news-list">
+          <li class="p-news-list--item"><a class="p-news-list--item__anchor" href="#"><time>2019-01-01</time>次男、自分のことを名前で呼ぶようになりました。</a></li>
+          <li class="p-news-list--item"><a class="p-news-list--item__anchor" href="#"><time>2019-01-01</time>長男、自転車の補助輪が外れました。</a></li>
+          <li class="p-news-list--item"><a class="p-news-list--item__anchor" href="#"><time>2019-01-01</time>次男のイヤイヤ期が始まりました。</a></li>
+          <li class="p-news-list--item"><a class="p-news-list--item__anchor" href="#"><time>2919-01-01</time>長男のイヤイヤ期が終了しました。</a></li>
         </ul>
       </div>
     </section>
 
 
     <section class="recruit">
-      <div class="recruit-img"><img src="images/a7e23a2d289cacd78ef80debdf54bb9e_m.jpg" alt="握手"></div>
-      <h2><a href="">採用情報</a></h2>
-      <div class="bg2"></div>
+      <div class="recruit-img--box"><img class="recruit-img--box__img" src="../image/index_recruit01.jpeg" alt="家族"></div>
+      <h2 class="recruit--title"><a class="recruit--title__anchor" href="">採用情報</a></h2>
+      <div class="recruit--bg"></div>
     </section>
   </main>
 
  <footer class="l-footer">
-        <div class="p-footer--wrapper">
-        <div class="c-footer-adress">
-          <h2 class="c-footer-adress__title">もなか株式会社</h2>
-          <p class="c-footer-adress__text">〒000−0000 <br>
+        <div class="l-footer--inner inner">
+        <div class="p-footer-address">
+          <h2 class="p-footer-address__title">もなか株式会社</h2>
+          <p class="p-footer-address__text">〒000−0000 <br>
             東京都×××××××××× <br>
             TEL 01-2345-6789 <br>
             FAX 01-2345-6789
           </p>
         </div>
-        <ul class="c-footer-list">
-            <li class="c-footer-list--item"><a class="c-footer-list--item__anchor" href="#">トップページ</a></li>
-            <li class="c-footer-list--item"><a class="c-footer-list--item__anchor" href="#">会社概要</a></li>
-            <li class="c-footer-list--item"><a class="c-footer-list--item__anchor" href="#">事業内容</a></li>
-            <li class="c-footer-list--item"><a class="c-footer-list--item__anchor" href="#">採用情報</a></li>
-            <li class="c-footer-list--item"><a class="c-footer-list--item__anchor" href="#">お問い合わせ</a></li>
+        <ul class="p-footer-list c-list">
+            <li class="p-footer-list--item"><a class="p-footer-list--item__anchor" href="#">トップページ</a></li>
+            <li class="p-footer-list--item"><a class="p-footer-list--item__anchor" href="#">会社概要</a></li>
+            <li class="p-footer-list--item"><a class="p-footer-list--item__anchor" href="#">事業内容</a></li>
+            <li class="p-footer-list--item"><a class="p-footer-list--item__anchor" href="#">採用情報</a></li>
+            <li class="p-footer-list--item"><a class="p-footer-list--item__anchor" href="#">お問い合わせ</a></li>
         </ul>
         </div>
-        <div class="p-copylight">
-        <p class="p-copylight__text">©️ MONACACo., Ltd. All Rights Reserved.</p>
+        <div class="p-footer-copylight">
+        <p class="p-footer-copylight__text">©️ MONACACo., Ltd. All Rights Reserved.</p>
       </div>
       </footer>
 </body>

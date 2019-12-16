@@ -1,9 +1,19 @@
 /*
-   _footer
+   _l-footer
 */
+.l-footer--inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
+	padding: 50px 0;
+
+	@include sp {
+		flex-direction: column-reverse;
+	}
+}
 
 
 /*
-   _footer-end
+   _l-footer-end
 */
